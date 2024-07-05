@@ -6,7 +6,7 @@ body {
 }
 
 img {
-    padding: 0;
+    display: block;
 }
 
 ul {
@@ -36,6 +36,16 @@ h6 {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 
 
@@ -51,6 +61,7 @@ h6 {
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 
@@ -93,11 +104,13 @@ span {
 .nav-list {
     display: flex;
     gap: 40px;
+
+}
+
+.header-nav-item {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-
-.header-nav-item {}
 
 .header-nav-link {
     font-weight: 500;
@@ -147,7 +160,7 @@ span {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
+    max-width: 496px;
     padding-bottom: 48px;
     margin: 0 auto;
 
@@ -169,35 +182,25 @@ span {
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
-
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 /* --------------- -----------  */
 
 /* ---------------FEATURES -----------  */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 0;
-    bottom: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .features-list {
     padding-top: 133px;
     padding-bottom: 134px;
     display: flex;
-
+    gap: 24px;
 }
 
 .features-item {
-    width: 264px;
     margin-right: 24px;
-    /* width: calc((100% - 3 * 24px) / 4); */
+    width: calc ((100% - 3 * 24px) / 4);
 }
 
 .features-title {
@@ -206,8 +209,7 @@ span {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-bottom: 8px;
-
+    margin-bottom: 8px;
 }
 
 .features-text {
@@ -221,7 +223,7 @@ span {
 .team {
     background-color: #f4f4fd;
     padding-top: 120px;
-    padding-bottom: 93px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -237,6 +239,11 @@ span {
 
 .team-list {
     display: flex;
+    gap: 24px;
+}
+
+.container-team {
+    padding: 32px 0;
 }
 
 .team-images-title {
@@ -247,7 +254,8 @@ span {
     text-align: center;
     color: #2e2f42;
     padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-images-item {
@@ -255,6 +263,7 @@ span {
     border-radius: 0 0 4px 4px;
     width: 264px;
     margin-right: 24px;
+    text-align: center;
 
 }
 
@@ -269,11 +278,15 @@ span {
 
 /* --------------- -----------  */
 /* -------------project-------------  */
-.project {}
+.project {
+    padding: 120px 0 120px 0;
+}
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 
 
 }
@@ -285,11 +298,18 @@ span {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
-.project-item {}
+.container-project {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.project-item {
+    margin-right: 0;
+}
 
 .project-images {}
 
@@ -300,7 +320,7 @@ span {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding-top: 32px;
-    padding-top: 8px;
+    margin-bottom: 8px;
 }
 
 .project-text {
@@ -315,7 +335,7 @@ span {
 /* ------------FOOTER------------  */
 .footer {
     background: #2e2f42;
-    padding-top: 100px;
+    padding: 100px 0 100px;
 
 }
 
@@ -327,6 +347,8 @@ span {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 
 
 }
@@ -335,11 +357,7 @@ span {
     padding-bottom: 100px;
 }
 
-.footer-logo {
-    padding-bottom: 16px;
-}
-
-.footer-italic {
+. .footer-italic {
     color: #f4f4fd;
 }
 
