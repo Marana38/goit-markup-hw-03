@@ -30,29 +30,23 @@ h6 {
 
 }
 
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
-}
+
+
+
 
 
 
 /* ---------------HEADER-----------  */
 .header {
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0;
+}
 
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .header-container {
@@ -62,24 +56,6 @@ h6 {
 .header-nav {
     display: flex;
     align-items: center;
-}
-
-
-
-address {
-    font-style: normal;
-    margin-left: auto;
-}
-
-.address-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-}
-
-.address-list {
-    display: flex;
-    gap: 40px;
 }
 
 .header-logo {
@@ -93,7 +69,6 @@ address {
     color: #4d5ae5;
     padding-top: 24px;
     padding-bottom: 24px;
-
     margin-right: 76px;
 }
 
@@ -108,8 +83,12 @@ span {
 }
 
 .header-nav-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
+}
+
+.header-nav-item :hover,
+.header-nav-item :focus {
+    color: #404bbf;
 }
 
 .header-nav-link {
@@ -118,14 +97,21 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-
-
 }
 
+.address {
+    font-style: normal;
+    margin-left: auto;
+}
 
-.header-nav-item :hover,
-.header-nav-item :focus {
-    color: #404bbf;
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-link:hover,
@@ -133,14 +119,12 @@ span {
     color: #404bbf;
 }
 
-
 .address-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 
 
 
@@ -191,6 +175,21 @@ span {
 /* --------------- -----------  */
 
 /* ---------------FEATURES -----------  */
+.features {
+    padding: 120px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .features-list {
     padding-top: 133px;
     padding-bottom: 134px;
@@ -218,13 +217,17 @@ span {
     letter-spacing: 0.02em;
 }
 
+
+
 /* --------------- -----------  */
 /* ---------------team-----------  */
+
 .team {
     background-color: #f4f4fd;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 
 .team-title {
     font-size: 36px;
@@ -234,7 +237,6 @@ span {
     color: #2e2f42;
     text-transform: capitalize;
     margin-bottom: 72px;
-
 }
 
 .team-list {
@@ -246,6 +248,16 @@ span {
     padding: 32px 0;
 }
 
+.team-images-item {
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    margin-right: 24px;
+    text-align: center;
+    width: calc((100% - 72px) / 4);
+}
+
+.team-images {}
+
 .team-images-title {
     font-weight: 500;
     font-size: 20px;
@@ -253,18 +265,8 @@ span {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-top: 32px;
     margin-bottom: 8px;
     text-align: center;
-}
-
-.team-images-item {
-    background-color: #fff;
-    border-radius: 0 0 4px 4px;
-    width: 264px;
-    margin-right: 24px;
-    text-align: center;
-
 }
 
 .team-images-text {
@@ -272,9 +274,11 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom: 32px;
 
 }
+
+.team-images-img {}
+
 
 /* --------------- -----------  */
 /* -------------project-------------  */
@@ -282,14 +286,6 @@ span {
     padding: 120px 0 120px 0;
 }
 
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-
-
-}
 
 .project-title {
     font-size: 36px;
@@ -301,14 +297,21 @@ span {
     margin-bottom: 72px;
 }
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.project-item {
+    width: calc((100% - 48px) / 3);
+}
+
 .container-project {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-}
-
-.project-item {
-    margin-right: 0;
 }
 
 .project-images {}
@@ -357,7 +360,9 @@ span {
     padding-bottom: 100px;
 }
 
-. .footer-italic {
+
+
+.footer-italic {
     color: #f4f4fd;
 }
 
