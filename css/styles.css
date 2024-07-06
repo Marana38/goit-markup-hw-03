@@ -185,11 +185,13 @@ span {
     margin: -1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
     clip-path: inset(100%);
-    clip-rule: (0 0 0 0);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 
 .features-list {
     padding-top: 133px;
