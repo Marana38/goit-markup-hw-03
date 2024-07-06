@@ -196,11 +196,10 @@ span {
     padding-bottom: 134px;
     display: flex;
     gap: 24px;
-}
-
-.features-item {
     flex-basis: calc((100% - 72px) / 4)
 }
+
+.features-item {}
 
 .features-title {
     font-weight: 500;
