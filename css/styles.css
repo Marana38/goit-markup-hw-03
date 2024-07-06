@@ -82,9 +82,7 @@ span {
 
 }
 
-.header-nav-item {
-    padding: 24px 0;
-}
+.header-nav-item {}
 
 .header-nav-item :hover,
 .header-nav-item :focus {
@@ -97,6 +95,7 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .address {
@@ -198,8 +197,7 @@ span {
 }
 
 .features-item {
-    margin-right: 24px;
-    width: calc ((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 72px) / 4)
 }
 
 .features-title {
@@ -251,7 +249,6 @@ span {
 .team-images-item {
     background-color: #fff;
     border-radius: 0 0 4px 4px;
-    margin-right: 24px;
     text-align: center;
     width: calc((100% - 72px) / 4);
 }
