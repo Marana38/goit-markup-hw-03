@@ -27,6 +27,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
 
 }
 
@@ -40,7 +41,7 @@ h6 {
 /* ---------------HEADER-----------  */
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding: 24px 0;
+
 }
 
 .container {
@@ -144,8 +145,9 @@ span {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    padding-bottom: 48px;
     margin: 0 auto;
+    margin-bottom: 48px;
+
 
 }
 
@@ -194,8 +196,6 @@ span {
 
 
 .features-list {
-    padding-top: 133px;
-    padding-bottom: 134px;
     display: flex;
     gap: 24px;
 
@@ -285,7 +285,7 @@ span {
 /* --------------- -----------  */
 /* -------------project-------------  */
 .project {
-    padding: 120px 0 120px 0;
+    padding: 93px 0 120px 0;
 }
 
 
@@ -357,9 +357,7 @@ span {
 
 }
 
-.footer-container {
-    padding-bottom: 100px;
-}
+.footer-container {}
 
 
 
